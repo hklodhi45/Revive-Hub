@@ -47,6 +47,7 @@ nav{
   background-image: linear-gradient(var(--bg-glow2), #00241166 40%, #00080400);
   display: flex;
   align-items: center;
+  z-index: 20;
 }
 .logo{
   flex-grow: 2;
@@ -230,4 +231,51 @@ nav{
   box-shadow:#7e0120aa 0 0 50px 0;
 }
 
-
+/* How it works? */
+.how-it-works{
+  margin: 4rem auto 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: margin 1s ease;
+}
+.slide{
+  margin-top: 5rem;
+}
+.how-it-works button{
+  padding: 0.75rem 1.25rem;
+  font-size: 1.25rem;
+  font-family: sora;
+  letter-spacing: 0.05rem;
+  border-radius: 50px;
+  background-color: transparent;
+  border: none;
+  background-image: radial-gradient(#00311900, #0a4e0280 75%, #073801);
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.how-it-works button:hover{
+  box-shadow: #0a4e0280 0 0 20px 0;
+}
+.how-it-works button:active{
+  transform: scale(1.02);
+}
+.map{
+  width: 0px;
+  height: 0px;
+  background-image: url(../Images/How-it-works.png);
+  background-size: contain;
+  margin-top: -1rem;
+  border-radius: 30px;
+  box-shadow: #3698015b 0 0 20px 0;
+  transition: all 1s ease;
+  opacity: 0;
+  z-index: -1;
+}
+.open{
+  width: 1000px;
+  height: 500px;
+  margin-top: 3rem;
+  opacity: 1;
+}
