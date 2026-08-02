@@ -1,0 +1,233 @@
+:root{
+  --primary-bg : #000804;
+  --secondary-bg : #003119;
+  --bg-glow : #068244;
+  --bg-glow2 : #002411;
+}
+@font-face {
+  font-family: sora;
+  src: url(../Fonts/Sora.ttf);
+}
+@font-face {
+  font-family: caveat;
+  src: url(../Fonts/Caveat.ttf);
+}
+@font-face {
+  font-family: inter;
+  src: url(../Fonts/Inter.ttf);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box ;
+  color: #fff;
+}
+body{
+  background-color: var(--primary-bg);
+}
+
+/* bg-glow */
+.bg-glow{
+  position: fixed;
+  bottom: -500px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 900px;
+  width: 900px;
+  background-image: radial-gradient(#06844537, #00311900 70%);
+  border-radius: 50%;
+  z-index: -10;
+}
+
+/* Navbar */
+nav{
+  position:sticky;
+  top: 0;
+  height: 4.5rem;
+  background-image: linear-gradient(var(--bg-glow2), #00241166 40%, #00080400);
+  display: flex;
+  align-items: center;
+}
+.logo{
+  flex-grow: 2;
+}
+.navs{
+  flex-grow: 8;
+}
+.navs ul{
+  display: flex;
+  width: 100%;
+  list-style-type: none;
+  justify-content: center;
+}
+.navs ul li{
+  width: max-content;
+  height: max-content;
+  font-size: 0.7rem;
+  font-family: 'sora';
+  border-radius: 3rem;
+  padding: 0.4rem 0.75rem;
+  background-image: radial-gradient(#00311900, #00311966 50%, #00331acc);
+  margin: 1.5rem;
+  align-self: center;
+}
+#home{
+  font-size: 1.25rem;
+  padding: 0.4rem 1rem;
+}
+.theme{
+  flex-grow: 2;
+}
+
+/* Hero */
+.hero{
+  position: sticky;
+  top: 110px;
+  display: flex;
+  justify-content: center;
+  margin: 2rem auto 4rem;
+  z-index: -10;
+}
+.hero .text{
+  text-align: center;
+  margin: auto 3rem;
+}
+.hero .text h1{
+  font-family: caveat;
+}
+.hero .text h2{
+  font-family: sora;
+  font-size: 3rem;
+}
+.elements{
+  width: 20%;
+  height: 200px;
+  position: relative;
+}
+.hero .elements .icon{
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 3.5rem;
+  width: 4.5rem;
+}
+.phone-icon{
+  background-image: url(../Icons/phone_icon_rh.svg);
+  left: 0;
+  top: 0;
+  transform: rotate(-15deg);
+}
+.laptop-icon{
+  background-image: url(../Icons/laptop_icon_rh.svg);
+  left: 35%;
+  top: 60%;
+}
+.battery-icon{
+  background-image: url(../Icons/battery-x_icon_rh.svg);
+  left: 70%;
+  top: 22%;
+  transform: rotate(-15deg);
+}
+.elements2 .phone-icon{
+  left: auto;
+  right: 0;
+  top: 0;
+  transform: rotate(15deg);
+}
+.elements2 .laptop-icon{
+  left: auto;
+  right: 35%;
+  top: 60%;
+}
+.elements2 .battery-icon{
+  left: auto;
+  right: 70%;
+  top: 22%;
+  transform: rotate(-165deg);
+}
+
+/* sell and Donate cards */
+.sell-donate{
+  display: flex;
+  justify-content: space-evenly;
+}
+.sell-donate .card{
+  height: 300px;
+  width: 450px;
+  background-size: contain;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  transition:all 0.5s ease;
+  cursor: pointer;
+}
+.sell-donate .card h2{
+  font-size: 3rem;
+  font-family: sora;
+}
+.sell-donate .card h3{
+  font-size: 1.2rem;
+  font-family: sora;
+}
+.sell-donate .card p{
+  width: 50%;
+  font-size: 0.8rem;
+  font-family: inter;
+  margin-top: 1.5rem;
+  color: #000;
+}
+.sell-donate .card .btn{
+  height: 2rem;
+  font-size: 0.9rem;
+  font-family: sora;
+  font-weight: 600;
+  height: max-content;
+  width: max-content;
+  padding: 0.6rem 1rem;
+  border-radius: 50px;
+  margin-top: 2.5rem;
+}
+.sell-donate .sell{
+  background-image: url(../Images/Sell-bg.png);
+  box-shadow:#443202 0 0 30px 0;
+  align-items: end;
+  text-align: right;
+  padding: 1rem 1.5rem;
+}
+.sell-donate .sell h2{
+  color: #DA7E0C;
+}
+.sell-donate .sell h3{
+  color: #b36b14d4;
+}
+.sell-donate .sell .btn{
+  background-color: #7e4601e8;
+  box-shadow: inset #e6850fde 0 0 10px;
+}
+.sell-donate .donate{
+  background-image: url(../Images/Donate-bg.png);
+  box-shadow:#7e012180 0 0 30px 0;
+  align-items: start;
+  text-align: left;
+  padding: 1rem 1.5rem;
+}
+.sell-donate .donate h2{
+  color: #F9638A;
+}
+.sell-donate .donate h3{
+  color: #b121478e;
+}
+.sell-donate .donate .btn{
+  background-color: #EC2B5D;
+  box-shadow: inset #F8CDD8 0 0 10px;
+}
+.sell-donate .sell:hover{
+  transform: scale(1.005);
+  box-shadow:#443202 0 0 50px 0;
+}
+.sell-donate .donate:hover{
+  transform: scale(1.005);
+  box-shadow:#7e0120aa 0 0 50px 0;
+}
+
+
