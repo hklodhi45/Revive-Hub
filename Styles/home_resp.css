@@ -85,7 +85,46 @@
   }
 }
 
-@media (width <= 768px) {
+@media (width <= 785px) {
+  /* navbar */
+  nav .logo{
+    width: 40%;
+  }
+  nav .navs{
+    width: 20%;
+  }
+  nav .theme{
+    width: 40%;
+  }
+  .navs ul{
+    flex-direction: column;
+    width: 100%;
+    list-style-type: none;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  .navs ul li{
+    margin: 1rem;
+  }
+  .navs ul i{
+    display: block;
+    position: absolute;
+    top: 3.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+  }
+  .navs ul .other{
+    margin: 0.5rem;
+    background-color: #00331acc;
+    transform: translateY(-12rem);
+    transition: transform 1s ease;
+    z-index: -4;
+  }
+  .navs ul .open{
+    transform: translateY(0rem);
+  }
+
   /* hero  */
 
   .hero{
@@ -104,8 +143,9 @@
     top: 0;
   }
   .laptop-icon{
-    left: 45%;
+    left: 50%;
     top: 30%;
+    transform: translateX(-50%);
   }
   .battery-icon{
     left: auto;
@@ -118,9 +158,10 @@
     bottom: 0;
   }
   .elements2 .laptop-icon{
-    left: 45%;
+    left: 50%;
     top: auto;
     bottom: 30%;
+    transform: translateX(-50%);
   }
   .elements2 .battery-icon{
     left: auto;
@@ -140,6 +181,7 @@
   }
   .sell-donate > div{
     display: flex;
+    justify-content: space-around ;
   }
   .sell-donate > div .logo{
     display: flex;
@@ -221,6 +263,157 @@
   .impact .impacts div{
     width: 20rem;
     padding: 1.25rem;
+  }
+  .impact .impacts div h4{
+    margin: 0.75rem 1rem 0rem;
+  }
+  .impact .impacts div p{
+    margin: 0.75rem auto 0rem;
+    display: block;
+  }
+}
+
+@media (width <= 448px) {
+  body{
+    overflow-x: hidden;
+  }
+  /* navbar */
+  .logo svg{
+    height: 1.5rem;
+    width: 1.5rem;
+    margin:auto 0.25rem auto 1.5rem;
+  }
+  .logo svg path{
+    fill: rgb(130, 243, 130);
+  }
+  .logo h4{
+    font-size: 0.8rem;
+  }
+  .logo h5{
+    color: rgb(185, 237, 185);
+    font-size: 0.75rem;
+  }
+
+  .navs ul li{
+    font-size: 0.5rem;
+  }
+  .navs ul li input[type="radio"]:checked + label{
+    font-size: 1rem;
+    padding: 0.4rem 1rem;
+  }
+
+  /* hero  */
+  .hero{
+    flex-direction: column;
+    margin: 0rem auto 2.5rem;
+    top: 100px;
+  }
+  .hero .text h1{
+    font-size: 1.2rem;
+  }
+  .hero .text h2{
+    font-size: 1.75rem;
+  }
+  .elements{
+    width: 100%;
+    height: 50px;
+    margin: 2rem auto;
+  }
+  .hero .elements .icon{
+    width: 2rem;
+    height: 2rem;
+  }
+  .phone-icon{
+    left: 2rem;
+    top: 0;
+  }
+  .laptop-icon{
+    left: 50%;
+    top: 30%;
+    transform: translateX(-50%);
+  }
+  .battery-icon{
+    left: auto;
+    right: 2rem;
+    top: 0%;
+  }
+  .elements2 .phone-icon{
+    left: 2rem;
+    top: auto;
+    bottom: 0;
+  }
+  .elements2 .laptop-icon{
+    left: 50%;
+    top: auto;
+    bottom: 30%;
+    transform: translateX(-50%);
+  }
+  .elements2 .battery-icon{
+    left: auto;
+    right: 2rem;
+    top: auto;
+    bottom: 0;
+    transform: rotate(15deg);
+  }
+
+  /* sell-donate */
+  .sell-donate{
+    height: 400px;
+  }
+  .sell-donate > div .logo{
+    display: none;
+  }
+  .sell-donate .card{
+      height: 180px;
+      width: 270px;
+      padding: 1rem 1rem;
+    }
+  .sell-donate .sell{
+    margin-left: 0rem;
+  }
+  .sell-donate .donate{
+    margin-right: 0rem;
+  }
+  .sell-donate .card .btn{
+    font-size: 0.6rem;
+    margin-top: 3.5rem;
+  }
+
+  /* how it works */
+  .how-it-works{
+    margin-top: 2.5rem;
+  }
+  .how-it-works button{
+    padding: 0.75rem 1rem;
+    font-size: 0.8rem;
+  }
+  .how-it-works .open{
+    width: 300px;
+    height: 150px;
+    margin-top: 2rem;
+  }
+
+  /* our impact */
+  .impact{
+    padding-bottom: 1.35rem;
+  }
+  .impact .impacts{
+    width: 100vw;
+    height: 25rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem auto;
+  }
+  .impact .impacts div h3{
+    font-size: 1.5rem;
+  }
+  .impact .impacts div{
+    width: 16rem;
+    padding: 1rem;
+  }
+  .impact .impacts div h4{
+    font-size: 0.75rem;
   }
   .impact .impacts div h4{
     margin: 0.75rem 1rem 0rem;

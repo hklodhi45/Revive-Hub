@@ -1,3 +1,14 @@
+// nav dropdown
+let navDropdown = document.querySelector('.navs ul i');
+
+let otherNavs = document.querySelectorAll('.navs ul .other');
+navDropdown.addEventListener('click', () => {
+  otherNavs.forEach((E)=>{
+    E.classList.toggle('open');
+  });
+})
+
+// hero fade in-out animation
 let hero = document.querySelector('.hero');
 gsap.to((hero), {
   opacity:0,
@@ -10,9 +21,8 @@ gsap.to((hero), {
   }
 });
 
-
+// how it works section responsiveness
 let howItWorksBtn = document.querySelector('.how-it-works button');
-
 isOpen = false;
 howItWorksBtn.addEventListener('click', () => {
   const width = window.innerWidth;
@@ -51,6 +61,7 @@ howItWorksBtn.addEventListener('click', () => {
 
 });
 
+// our impact section count
 let impactCount = document.querySelectorAll('.impact .impacts div h3');
 let countObj = {value : 0};
 
@@ -69,6 +80,7 @@ gsap.to(countObj, {
   }
 });
 
+// explrore btn animation
 let exploreBtn = document.querySelector('.explore-btn');
 
 exploreBtn.addEventListener('mouseenter', ()=>{
