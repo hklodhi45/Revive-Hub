@@ -275,6 +275,7 @@
 
 @media (width <= 448px) {
   body{
+    width: 100vw;
     overflow-x: hidden;
   }
   /* navbar */

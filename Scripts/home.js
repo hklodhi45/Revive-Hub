@@ -42,9 +42,9 @@ howItWorksBtn.addEventListener('click', () => {
       });
     } else if(482 < width && width <= 768){
       gsap.to(window, {
-        scrollTo: { y: 1050 }
+        scrollTo: { y: 900 }
       });
-    }  else{
+    } else{
       gsap.to(window, {
         scrollTo: { y: 665 }
       });
