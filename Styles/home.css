@@ -356,26 +356,26 @@ nav{
   font-size: 0.75rem;
   font-family: inter;
 }
-.impact .explore-btn{
-  height: 2.5rem;
+.explore-btn{
+  height: max-content;
   width:max-content;
   background-image:radial-gradient(#80808000, #8080804d);
   border-radius: 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 1rem;
-  transition: all 0.5s ease;
+  padding: 0.5rem 1rem;
   cursor: pointer;
 }
-.impact .explore-btn i{
+.explore-btn i{
   font-size: 1.25rem;
 }
-.impact .explore-btn h3{
+.explore-btn h3{
   font-weight: 600;
   width: 0;
   overflow: hidden;
   transition: width 0.5s ease-in-out;
+  text-wrap: nowrap;
 }
 .explore-btn:hover{
   box-shadow:rgba(236, 217, 217, 0.097) 0 0 10px 0;
@@ -383,3 +383,83 @@ nav{
 .impact .explore-btn:hover > h3{
   width: 5rem;
 }
+
+/* parner with us */
+.partner{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4rem auto;
+}
+.partner h1{
+  font-size: 1.25rem;
+  font-family: sora;
+}
+.partner .bar{
+  margin-top: 0.25rem;
+  width: 6rem;
+  height: 0.15rem;
+  background-color: #6DFF1E;
+}
+.partner-hero{
+  font-size: 3rem;
+  font-family: caveat;
+  font-weight: 700;
+  width: 30rem;
+  text-align: center;
+  margin: 2.5rem auto 1.5rem;
+  color: #6DFF1E;
+  text-shadow: 0px 0px 10px #6dff1e92;
+}
+.partner .explore-btn:hover > h3{
+  width: 11rem;
+}
+.partner p{
+  width: 38rem;
+  text-align: center;
+  margin: 3rem auto 2.5rem;
+  font-size: 0.75rem;
+  font-family: inter;
+  font-weight: 200;
+}
+.partner .card-container{
+  margin: 1.5rem auto;
+  display: flex;
+  justify-content: space-between;
+  width: 70vw;
+}
+.partner .card{
+  box-sizing: border-box;
+  width: 7rem;
+  height: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.partner .card div{
+  height: 4rem;
+  width: 4rem;
+  background-color: #003119;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: box-shadow 0.5s ease;
+}
+.partner .card div img{
+  height: 2.5rem;
+  width: 2.5rem;
+}
+.partner .card h2{
+  font-size: 1rem;
+  font-family: sora;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  text-wrap: nowrap;
+}
+.partner .card:hover div{
+  box-shadow: 0 0 20px 0 #08a25588;
+}
+

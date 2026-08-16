@@ -1,7 +1,7 @@
 // nav dropdown
 let navDropdown = document.querySelector('.navs ul i');
-
 let otherNavs = document.querySelectorAll('.navs ul .other');
+
 navDropdown.addEventListener('click', () => {
   otherNavs.forEach((E)=>{
     E.classList.toggle('open');
@@ -10,6 +10,7 @@ navDropdown.addEventListener('click', () => {
 
 // hero fade in-out animation
 let hero = document.querySelector('.hero');
+
 gsap.to((hero), {
   opacity:0,
   scrollTrigger:{
@@ -24,6 +25,7 @@ gsap.to((hero), {
 // how it works section responsiveness
 let howItWorksBtn = document.querySelector('.how-it-works button');
 isOpen = false;
+
 howItWorksBtn.addEventListener('click', () => {
   const width = window.innerWidth;
   if(!isOpen){
@@ -87,3 +89,20 @@ exploreBtn.addEventListener('mouseenter', ()=>{
   let h3 = document.querySelector('.explore-btn h3');
   h3.classList.toggle('open-exp');
 })
+
+
+// partner with us section animation with GSAP
+let moveUp = document.querySelectorAll('.gsap-move-up');
+
+moveUp.forEach((element) => {
+  gsap.from(element, {
+    y: 50,
+    opacity: 0,
+    duration: 0.7,
+    scrollTrigger: {
+      trigger: element,
+      scroller: "body",
+      start: "top 80%"
+    }
+  });
+});
