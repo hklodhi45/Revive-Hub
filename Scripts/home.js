@@ -22,6 +22,7 @@ gsap.to((hero), {
   }
 });
 
+
 // how it works section responsiveness
 let howItWorksBtn = document.querySelector('.how-it-works button');
 isOpen = false;
@@ -106,3 +107,31 @@ moveUp.forEach((element) => {
     }
   });
 });
+
+// footer 
+let footerLinks = document.querySelectorAll('footer li');
+
+footerLinks.forEach(link => {
+  let value = link.innerText;
+  link.innerHTML = `<i class="fa-solid fa-angle-right"></i> ${value} `;
+})
+
+// footer animation
+let content = document.querySelectorAll('footer .content ul');
+let footer = document.querySelector('footer');
+
+let tl = gsap.timeline({
+  scrollTrigger: {
+    trigger: content,
+    scroller: "body",
+    start: "top 85%",
+    once: true
+  }
+});
+  tl.from(content, {
+    x : -75,
+    opacity : 0,
+    duration : 0.7,
+    stagger : 0.3
+  })
+  
