@@ -310,6 +310,50 @@
     margin-top: 2.5rem;
   }
 
+  /* possibilities */
+  .possibilities .main{
+    width: 100vw;
+  }
+  .possibilities .content{
+    width: 27rem;
+    display: grid;
+    grid-gap: 9vw;
+  }
+  .possibilities .head .bar{
+    width: 3rem;
+  }
+  .possibilities .head h2{
+    font-size: 1.125rem;
+  }
+  .possibilities .head h1{
+    font-size: 1.5rem;
+  }
+  .possibilities .method{
+    height: 7rem;
+    padding:1rem;
+  }
+  .possibilities .recover, .possibilities .recycle{
+    flex-direction: column-reverse;
+  }
+  .possibilities .method h2{
+    font-size: 1.25rem;
+  }
+  .possibilities .method h3{
+    font-size: 0.9rem;
+    width: 7rem;
+    font-weight: 300;
+  }
+  .possibilities .method p{
+    display: none;
+  }
+  .possibilities .center-icon{
+    height: 5.5rem;
+    width: 5.5rem;
+  }
+  .possibilities .center-icon i{
+     font-size: 2rem;
+  }
+
   /* our impact */
   .impact{
     padding-bottom: 1.35rem;
@@ -536,6 +580,43 @@
     width: 300px;
     height: 150px;
     margin-top: 2rem;
+  }
+
+  /* possibilities */
+  .possibilities .main{
+    width: 100vw;
+  }
+  .possibilities .content{
+    width: 20rem;
+    grid-gap: 2.5rem;
+  }
+  .possibilities .head .bar{
+    width: 2.5rem;
+  }
+  .possibilities .head h2{
+    font-size: 1rem;
+  }
+  .possibilities .head h1{
+    font-size: 1.25rem;
+  }
+  .possibilities .method{
+    padding:0.75rem;
+    height: 6.5rem;
+  }
+  .possibilities .method i{
+    font-size: 1.25rem;
+  }
+  .possibilities .method h2{
+    font-size: 0.95rem;
+  }
+  .possibilities .method h3{
+    font-size: 0.75rem;
+    width: 4rem;
+    font-weight: 200;
+  }
+  .possibilities .center-icon{
+    height: 5rem;
+    width: 5rem;
   }
 
   /* our impact */

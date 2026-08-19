@@ -305,6 +305,153 @@ nav{
   opacity: 1;
 }
 
+/* possibilities */
+.possibilities{
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+  margin: 2.5rem 0;
+}
+.possibilities .main{
+  width: 42rem;
+  font-family: sora;
+}
+.possibilities .head{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.possibilities .head .bar{
+  height: 0.1rem;
+  width: 5rem;
+  background-color: #6DFF1E;
+  margin-bottom: 0.5rem;
+}
+.possibilities .head h2{
+  color: rgba(255, 255, 255, 0.916);
+}
+.possibilities .head h1{
+  color:#6DFF1E ;
+}
+.possibilities .content{
+  display: grid;
+  grid-template-columns:repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 7rem;
+  position: relative;
+  margin: 2.5rem auto;
+}
+.possibilities .method i{
+  position: absolute;
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.886);
+}
+.possibilities .method{
+  border: 1px solid #6dff1e3d;
+  background-color: #6dff1e0e;
+  height: 8rem;
+  border-radius: 1rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding:0.5rem 1rem;
+}
+.possibilities .left-method{
+  align-items: flex-start;
+  text-align: left;
+}
+.possibilities .right-method{
+  align-items: flex-end;
+  text-align: right;
+}
+.possibilities .method h2{
+  color:#6DFF1E ;
+  font-size: 1.6rem;
+}
+.possibilities .method h3{
+  font-size: 1rem;
+  font-family: inter;
+  font-weight: 400;
+  margin: 0.6rem 0;
+}
+.possibilities .method p{
+  font-size: 0.7rem;
+  font-family: inter;
+  font-weight: 200;
+  width: 13rem;
+}
+.possibilities .reuse{
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 5rem;
+  box-shadow: -3px -3px 20px 0 #6dff1e1b;
+}
+.possibilities .reuse i{
+  right: 1rem;
+  top: 1rem;
+}
+.possibilities .refurbish{
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 5rem;
+  box-shadow: 3px -3px 20px 0 #6dff1e1b;
+}
+.possibilities .refurbish i{
+  left: 1rem;
+  top: 1rem;
+}
+.possibilities .recover{
+  border-bottom-right-radius: 2rem;
+  border-top-right-radius: 5rem;
+  box-shadow: -3px 3px 20px 0 #6dff1e1b;
+}
+.possibilities .recover i{
+  right: 1rem;
+  bottom: 1rem;
+}
+.possibilities .recycle{
+  border-bottom-left-radius: 2rem;
+  border-top-left-radius: 5rem;
+  box-shadow: 3px 3px 20px 0 #6dff1e1b;
+}
+.possibilities .recycle i{
+  left: 1rem;
+  bottom: 1rem;
+}
+
+.possibilities .center-icon{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+  background-image: radial-gradient(#6dff1e11, #6dff1e1b 50%, #6dff1e50);
+  box-shadow: 0 0 30px 0 #6dff1e6a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@keyframes rotate-center-icon {
+  0%{
+    transform: rotate(0deg);
+  }
+  25%{
+    transform: rotate(15deg);
+  }
+  75%{
+    transform: rotate(-15deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
+.possibilities .center-icon i{
+  font-size: 2.5rem;
+  color: #6dff1eb6;
+  animation: rotate-center-icon 2s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+}
+
+
 /* Our Impact */
 .impact-container{
   width: 100vw;

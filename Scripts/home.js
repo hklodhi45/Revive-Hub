@@ -64,6 +64,94 @@ howItWorksBtn.addEventListener('click', () => {
 
 });
 
+// multiple possiblities animations
+let centericon = document.querySelector('.possibilities .center-icon');
+const icons = [
+  '<i class="fa-solid fa-mobile"></i>',
+  '<i class="fa-solid fa-car-battery"></i>',
+  '<i class="fa-solid fa-laptop"></i>',
+  '<i class="fa-solid fa-battery-half"></i>',
+  '<i class="fa-solid fa-display"></i>'
+];
+
+function showIcon(icon){
+  return new Promise ((resolve, reject) => {
+    setTimeout(() =>{
+      centericon.innerHTML = icon;
+      resolve();
+    }, 2000);
+  });
+}
+async function showIconTrigger(){
+  let i=0;
+  while(i<icons.length){
+    await showIcon(icons[i]);
+    i++;
+    if(i == icons.length){
+      i = 0;
+    }
+  }
+}
+showIconTrigger();
+
+let possibilitiesHead = document.querySelector('.possibilities .head');
+
+let tl2 = gsap.timeline({
+  scrollTrigger : {
+    trigger : ".possibilities",
+    scroller : "body",
+    start : "top 60%"
+  }
+});
+tl2.from(possibilitiesHead.children, {
+  y : 30,
+  opacity : 0,
+  duration : 0.6,
+  stagger : 0.2
+});
+
+let tl3 = gsap.timeline({
+  scrollTrigger : {
+    trigger : ".possibilities",
+    scroller : "body",
+    start : "top 35%"
+  }
+});
+let methods = document.querySelectorAll('.possibilities .method');
+tl3.from(methods, {
+  scale : 0.5,
+  opacity : 0,
+  duration : 1
+})
+.from('.reuse',{
+  x : "50%",
+  y : "50%",
+  duration : 0.75
+},0)
+.from('.refurbish',{
+  x : "-50%",
+  y : "50%",
+  duration : 0.75
+},0)
+.from('.recycle',{
+  x : "-50%",
+  y : "-50%",
+  duration : 0.75
+},0)
+.from('.recover',{
+  x : "50%",
+  y : "-50%",
+  duration : 0.75
+},0)
+
+// gsap.to('.possibilities .center-icon i', {
+//   rotation : 45,
+//   duration : 2,
+//   repeat : -1,
+//   yoyo : true,
+//   ease : "power1.inOut"
+// })
+
 // our impact section count
 let impactCount = document.querySelectorAll('.impact .impacts div h3');
 let countObj = {value : 0};
