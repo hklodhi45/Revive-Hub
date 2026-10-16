@@ -18,7 +18,7 @@ const detailsData = [
     text : "Help us understand its condition"
   },
   {
-    heroSubhead : "TDiscover the True Value of Your",
+    heroSubhead : "Discover the True Value of Your",
     heroHead : "Device",
     heroEx : "!",
     text : "Based on the details and condition you provided"

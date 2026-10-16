@@ -670,4 +670,7 @@
   footer .logo svg{
     margin: 0;
   }
+  footer{
+    margin: 0.75rem;
+  }
 }

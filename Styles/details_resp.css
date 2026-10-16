@@ -1,0 +1,167 @@
+@media (width <= 448px) {
+  html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  position: relative; /* Prevents unwanted document scrolling */
+  /* Extra safety for iOS Safari body bounce/scroll */
+}
+  nav{
+    position: fixed;
+    padding: 0;
+    width: 100%;
+  }
+  nav .logo, .theme{
+    display: none;
+  }
+  .navs{
+    padding: 0;
+    width: 100%;
+  }
+  .navs ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
+  }
+  .navs h6{
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .navs h5{
+    font-size: 0.45rem;
+  }
+  .navs .bar{
+    justify-content: start;
+    width: 80vw;
+    top: 52%;
+    left: 40vw;
+  }
+
+  .elements{
+    margin: 1rem 0rem;
+  }
+  .partner{
+    margin-top: 8rem;
+  }
+  main{
+    display: grid;
+    grid-template-columns: repeat(5, 100vw);
+    width: 100vw;
+  }
+  main > section{
+    width: 100vw;
+    padding: 0rem 1rem;
+    margin: 4rem 0 6rem;
+  }
+
+  .device{
+    margin: 2rem 0rem;
+  }
+  .card{
+    font-size: 7rem;
+    width: 9rem;
+    height: 12rem;
+  }
+  .card h4{
+    font-size: 0.8rem;
+  }
+  .card p{
+    font-size: 0.6rem;
+  }
+
+  /* detials */
+  .details{
+    row-gap: 3rem;
+  }
+  .details .input-container{
+    width: 90%;
+    height: max-content;
+  }
+  .details .egs{
+    position: relative;
+    top: 0;
+  }
+  .details .egs span{
+    font-size: 0.65rem;
+    margin-right: 0.5rem;
+  }
+
+  .continue-btn{
+    top: 8rem;
+  }
+
+  /* condition */
+  .condition{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 1.5rem;
+    row-gap: 3rem;
+  }
+  .condition p{
+    margin-bottom: 1.5rem;
+  }
+  .cnd-three .choices label{
+    height: 7rem;
+    padding: 1rem 0.5rem;
+  }
+  .cnd-three .choices label h2{
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #6DFF1E;
+  }
+  .cnd-three .choices label p{
+    margin-bottom: 0;
+  }
+  .cnd-three .continue-btn{
+    top: 110%;
+  }
+
+  /* value */
+  .value{
+    width: 100%;
+    padding: 0 1rem;
+    text-align: center;
+  }
+  .value h1{
+    font-size: 2rem;
+  }
+  .value h3{
+    font-size: 1rem;
+  }
+  .value p{
+    font-size: 0.75rem;
+  }
+  .value .continue-btn{
+    top: 0;
+  }
+
+  /* pickup */
+  .method-choice{
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+
+  /* green guide */
+  .green-guide .partner-hero{
+    font-size: 1.6rem;
+    margin: 1rem 0 1.5rem;
+  }
+  .green-guide h3{
+    width: 85%;
+    font-size: 0.9rem;
+    padding: 0;
+  }
+  .green-guide h3 i{
+    font-size: 1rem;
+    /* background-color: green; */
+    align-self: flex-start;
+  }
+
+  footer{
+    margin: 3rem 1rem;
+  }
+}
