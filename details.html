@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Device Details - Revive Hub</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+    integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://use.hugeicons.com/font/icons.css" />
+  <link rel="stylesheet" href="Styles/home.css">
+  <link rel="stylesheet" href="Styles/home_resp.css">
+  <link rel="stylesheet" href="Styles/details.css">
+  <link rel="stylesheet" href="Styles/home_resp.css">
+</head>
+
+<body>
+  <div class="bg-glow"></div>
+  <nav>
+    <a href="./home.html" class="logo">
+      <svg width="60" height="86" viewBox="0 0 60 86" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M50.5378 38.1994C50.357 38.8596 50.0493 39.4815 49.5913 39.9901C47.2313 42.6104 44.0057 44.7312 40.5708 46.2929C37.5228 47.6787 35.9584 51.3999 37.6682 54.2787L52.0137 78.431C53.9933 81.764 51.5913 85.9844 47.7148 85.9844H45.8204C44.0698 85.9844 42.4467 85.0688 41.5412 83.5706L18.5848 45.5862C16.5709 42.2539 18.9704 38 22.864 38H27.9939C27.9976 38 28.0011 38.0021 28.0029 38.0054C28.0047 38.0087 28.0084 38.0108 28.0122 38.0108C32.6843 38.0512 32.4707 38.0861 37.953 35.4708C39.2508 34.8517 40.2287 33.7082 40.6278 32.3268L44.6547 18.3877C45.5783 15.1904 43.1791 12 39.8511 12H21.9769C20.929 12 19.8966 12.3162 19.0907 12.9859C14.9004 16.468 12.0001 21.4098 12 26.9424V80.9844C12 83.7458 9.76142 85.9844 7 85.9844H5C2.23858 85.9844 0 83.7458 0 80.9844V26.9424C0.000121943 18.4159 6.24238 3.54682 17.3829 0.173683C17.7896 0.0505443 18.2151 0 18.64 0H54.4464C57.7455 0 60.1403 3.13886 59.2688 6.32078L50.5378 38.1994Z"
+          fill="white" />
+      </svg>
+      <span>
+        <h4>REVIVE</h4>
+        <h5>HUB</h5>
+      </span>
+    </a>
+    <div class="navs">
+      <div class="bar"></div>
+      <ul>
+        <li>
+          <input type="checkbox" name="navs" class="steps" id="Device">
+          <label>
+            <h6 class="tick">1</h6>
+            <h5>Device</h5>
+          </label>
+        </li>
+        <li>
+          <input type="checkbox" name="navs" class="steps" id="Details">
+          <label>
+            <h6 class="tick">2</h6>
+            <h5>Details</h5>
+          </label>
+        </li>
+        <li>
+          <input type="checkbox" name="navs" class="steps" id="Condition">
+          <label>
+            <h6 class="tick">3</h6>
+            <h5>Condition</h5>
+          </label>
+        </li>
+        <li>
+          <input type="checkbox" name="navs" class="steps" id="Impact">
+          <label>
+            <h6 class="tick">4</h6>
+            <h5>Impact / Value</h5>
+          </label>
+        </li>
+        <li>
+          <input type="checkbox" name="navs" class="steps" id="Pickup">
+          <label>
+            <h6 class="tick">5</h6>
+            <h5>Pickup / Drop</h5>
+          </label>
+        </li>
+      </ul>
+    </div>
+    <div class="theme"></div>
+  </nav>
+
+  <div class="hero">
+    <div class="elements">
+      <div class="icon phone-icon"></div>
+      <div class="icon laptop-icon"></div>
+      <div class="icon battery-icon"></div>
+    </div>
+    <div class="text">
+      <h1></h1>
+      <h2></h2>
+    </div>
+    <div class="elements elements2">
+      <div class="icon phone-icon"></div>
+      <div class="icon laptop-icon"></div>
+      <div class="icon battery-icon"></div>
+    </div>
+  </div>
+
+  <div class="partner partner-text">
+    <h1></h1>
+    <div class="bar"></div>
+    <i class="hgi hgi-stroke hgi-rounded hgi-arrow-left-02 back-btn"></i>
+  </div>
+  <main>
+    <!-- device -->
+    <section class="device">
+      <div class="card">
+        <img src="./Images/devices/smartphone.png" alt="">
+        <h4>Smartphone</h4>
+        <p>OnePlus, iPhone, Samsung & more</p>
+        <button><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+      <div class="card">
+        <img src="./Images/devices/laptop.png" alt="">
+        <h4>Laptop</h4>
+        <p>MacBook, Dell, HP, Lenovo & more</p>
+        <button><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+      <div class="card">
+        <img src="./Images/devices/tablet.png" alt="">
+        <h4>Tablet</h4>
+        <p>iPad, Samsung, Lenovo & more</p>
+        <button><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+      <div class="card">
+        <img src="./Images/devices/smartwatch.png" alt="">
+        <h4>Smartwatch</h4>
+        <p>Apple Watch, Samsung, Fitbit & more</p>
+        <button><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+      <div class="card">
+        <img src="./Images/devices/headphone.png" alt="">
+        <h4>Audio Gadgets</h4>
+        <p>AirPods, Sony, JBL, Bose & more</p>
+        <button><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+      <div class="card">
+        <img src="./Images/devices/monitor.png" alt="">
+        <h4>Monitor</h4>
+        <p>Dell, HP, LG, Samsung & more</p>
+        <button><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+      <div class="card">
+        <img src="./Images/devices/gaming.png" alt="">
+        <h4>Gaming Console</h4>
+        <p>PlayStation, Xbox, Nintendo & more</p>
+        <button><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+      <div class="card">
+        <img src="./Images/devices/other.png" alt="">
+        <h4>Other Devices</h4>
+        <p>Camera, Accessories & all other</p>
+        <button><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </section>
+    <!-- details -->
+    <section class="details">
+      <div class="input-container">
+        <h2>Brand</h2>
+        <input type="text" placeholder="eg. Samsung">
+        <div class="egs">
+          <span>Apple</span>
+          <span>Samsung</span>
+          <span>OnePlus</span>
+          <span>Nothing</span>
+          <span>Motorola</span>
+          <span>Oppo</span>
+          <span>Xiaomi</span>
+          <span>Realme</span>
+        </div>
+      </div>
+      <div class="input-container">
+        <h2>Model</h2>
+        <input type="text" placeholder="eg. Samsung S24 Ultra">
+        <div class="egs">
+          <span>M21 FE</span>
+          <span>S24 Ultra</span>
+          <span>A54 5g</span>
+          <span>F23 FE</span>
+          <span>S21 pro mini</span>
+          <span>M33 5G</span>
+        </div>
+      </div>
+      <div class="input-container">
+        <h2>RAM & Storage</h2>
+        <input type="text" placeholder="eg. 8GB / 128GB">
+        <div class="egs">
+          <span>6GB / 64GB</span>
+          <span>8GB / 128GB</span>
+          <span>4GB / 64GB</span>
+          <span>12GB / 256GB</span>
+          <span>12GB / 512GB</span>
+          <span>4GB / 32GB</span>
+        </div>
+      </div>
+      <div class="input-container">
+        <h2>Years Used</h2>
+        <input type="text" placeholder="eg. 6">
+        <button class="continue-btn">Continue</button>
+      </div>
+    </section>
+    <!-- condition -->
+    <section class="condition">
+      <div class="input-container cnd-one">
+        <h2>Show us your device</h2>
+        <p>Upload clear photos so we can assess its condition accurately.</p>
+        <input type="file" id="image">
+        <label for="image">
+          <i class="hgi hgi-stroke hgi-rounded hgi-camera-add-01"></i>
+          <h3>Drag or Upload Image Here</h3>
+        </label>
+      </div>
+      <div class="input-container cnd-two">
+        <h2>Device Description</h2>
+        <p>Are there any problems with the device?</p>
+        <input type="text" id="image"
+          placeholder="e.g. Small scratches on the back, cracked screen, battery drains quickly, speaker has low volume...">
+      </div>
+      <div class="input-container cnd-three">
+        <h2>Overall Condition</h2>
+        <div class="choices">
+          <input type="radio" id="new" name="condition">
+          <label for="new">
+            <h2>Like New</h2>
+            <p>Barely used with little to no visible wear</p>
+          </label>
+          <input type="radio" id="good" name="condition">
+          <label for="good">
+            <h2>Good</h2>
+            <p>Minor signs of use, fully functional</p>
+          </label>
+          <input type="radio" id="fair" name="condition">
+          <label for="fair">
+            <h2>Fair</h2>
+            <p>Visible wear or minor damage, but usable</p>
+          </label>
+          <input type="radio" id="poor" name="condition">
+          <label for="poor">
+            <h2>Poor</h2>
+            <p>Damaged or has functional issues</p>
+          </label>
+        </div>
+        <div class="continue-btn">
+          Continue
+        </div>
+      </div>
+    </section>
+    <!-- value & impact -->
+    <section class="value">
+      <h3>Estimated resale value</h3>
+      <h1>₹8,499</h1>
+      <p>Illustrative estimate — final value may vary after inspection.</p>
+      <button class="continue-btn">Continue</button>
+    </section>
+    <!-- pickup / drop -->
+    <section class="value pickup">
+      <h3>Choose your preferred method</h3>
+      <div class="method-choice">
+        <input type="radio" name="method" id="pickup">
+        <label for="pickup">
+          <i class="hgi hgi-stroke hgi-rounded hgi-truck-delivery"></i>
+          <h2>Doorstep Pickup</h2>
+          <p>We collect it form you</p>
+        </label>
+        <input type="radio" name="method" id="drop">
+        <label for="drop">
+          <i class="hgi hgi-stroke hgi-rounded hgi-location-08"></i>
+          <h2>Drop-off Center</h2>
+          <p>You bring it to us</p>
+        </label>
+      </div>
+      <a href="./home.html" class="confirm">Continue to confirmation</a>
+    </section>
+  </main>
+
+  <!-- Green guide -->
+  <div class="partner green-guide">
+    <h1>GREEN GUIDE</h1>
+    <div class="bar"></div>
+    <div class="partner-hero">Before you send your device remember these</div>
+    <h3>
+      <i class="hgi hgi-stroke hgi-rounded hgi-one-square"></i>
+      <span>Back up your data</span>
+      <i class="hgi hgi-stroke hgi-rounded hgi-cloud-upload"></i>
+    </h3>
+    <h3>
+      <i class="hgi hgi-stroke hgi-rounded hgi-two-square"></i>
+      <span>Sign out of accounts</span>
+      <i class="hgi hgi-stroke hgi-rounded hgi-logout-square-01"></i>
+    </h3>
+    <h3>
+      <i class="hgi hgi-stroke hgi-rounded hgi-three-square"></i>
+      <span>Remove personal information</span>
+      <i class="hgi hgi-stroke hgi-rounded hgi-album-01"></i>
+    </h3>
+    <h3>
+      <i class="hgi hgi-stroke hgi-rounded hgi-four-square"></i>
+      <span>Remove accessories & SIM/cards</span>
+      <i class="hgi hgi-stroke hgi-rounded hgi-simcard-02"></i>
+    </h3>
+  </div>
+
+  <footer>
+    <div class="content">
+      <div class="logo-container">
+        <div class="logo">
+          <svg width="60" height="86" viewBox="0 0 60 86" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M50.5378 38.1994C50.357 38.8596 50.0493 39.4815 49.5913 39.9901C47.2313 42.6104 44.0057 44.7312 40.5708 46.2929C37.5228 47.6787 35.9584 51.3999 37.6682 54.2787L52.0137 78.431C53.9933 81.764 51.5913 85.9844 47.7148 85.9844H45.8204C44.0698 85.9844 42.4467 85.0688 41.5412 83.5706L18.5848 45.5862C16.5709 42.2539 18.9704 38 22.864 38H27.9939C27.9976 38 28.0011 38.0021 28.0029 38.0054C28.0047 38.0087 28.0084 38.0108 28.0122 38.0108C32.6843 38.0512 32.4707 38.0861 37.953 35.4708C39.2508 34.8517 40.2287 33.7082 40.6278 32.3268L44.6547 18.3877C45.5783 15.1904 43.1791 12 39.8511 12H21.9769C20.929 12 19.8966 12.3162 19.0907 12.9859C14.9004 16.468 12.0001 21.4098 12 26.9424V80.9844C12 83.7458 9.76142 85.9844 7 85.9844H5C2.23858 85.9844 0 83.7458 0 80.9844V26.9424C0.000121943 18.4159 6.24238 3.54682 17.3829 0.173683C17.7896 0.0505443 18.2151 0 18.64 0H54.4464C57.7455 0 60.1403 3.13886 59.2688 6.32078L50.5378 38.1994Z"
+              fill="white" />
+          </svg>
+          <span>
+            <h4>REVIVE</h4>
+            <h5>HUB</h5>
+          </span>
+        </div>
+        <h2>Turn E-waste into new Possibilities</h2>
+      </div>
+      <ul>
+        <h3>EXPLORE</h3>
+        <li>Home</li>
+        <li>Revive Centers</li>
+        <li>Our Impact</li>
+        <li>Green Guide</li>
+      </ul>
+      <ul>
+        <h3>TAKE ACTION</h3>
+        <li>Sell</li>
+        <li>Donate</li>
+        <li>Partner with Us</li>
+        <li>Contact Us</li>
+      </ul>
+      <ul>
+        <h3>CONNECT</h3>
+        <li>Instagram</li>
+        <li>Facebook</li>
+        <li>LinkedIn</li>
+        <li>GitHub</li>
+      </ul>
+    </div>
+    <div class="copyrights">
+      <h4>&copy; 2026 ReviveHub. All rights reserved.</h4>
+      <div>
+        <h4>Privacy Policy</h4>
+        <h4>Terms of use</h4>
+      </div>
+    </div>
+  </footer>
+  <h5 class="credit">made with &hearts; by @hklodhi45</h5>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+  <script type="module" src="Scripts/details.js"></script>
+</body>
+
+</html>
