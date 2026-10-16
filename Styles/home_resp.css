@@ -470,7 +470,7 @@
   .logo svg{
     height: 1.5rem;
     width: 1.5rem;
-    margin:auto 0.25rem auto 1.5rem;
+    margin:auto 0.25rem auto 0.25rem;
   }
   .logo svg path{
     fill: rgb(130, 243, 130);
@@ -671,6 +671,6 @@
     margin: 0;
   }
   footer{
-    margin: 0.75rem;
+    margin: 0.75rem !important;
   }
 }
